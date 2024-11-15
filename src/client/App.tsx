@@ -1,18 +1,12 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./assets/styles.css";
-import HomePage from "./collections/collectionsPage";
+import SearchPage from "./collections/SearchPage";
+import HomePage from "./collections/HomePage"; 
 import NavBar from "./navBar";
 import * as React from "react";
 import LoginPage from "./login/loginPage";
 import SignupPage from "./signup/signupPage";
-import IndividualCollections from "./collections/components/individualCollections";
-import Review from "./review/reviewPage";
-import ReviewAll from "./review/reviewAll";
+import IntroPage from "./collections/IntroPage";
 
 const App: React.FC = () => {
   return (
@@ -20,22 +14,28 @@ const App: React.FC = () => {
       {/* Alias of BrowserRouter i.e. Router */}
       <Router>
         <Routes>
-          <Route path="/" element={<LoginPage />} />
-          <Route path="/collections" element={<IndividualCollections />} />
-          {/* <Route path="/" element={<Home />} />
-          <Route path="/search" element={<Search />} /> */}
-          <Route path="/review" element={<Review />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/reviewAll" element={<ReviewAll />} />
           <Route
-            path="/home"
+            path="/"
+            element={
+              <>
+              <NavBar />
+               <IntroPage/>
+              </>
+            }
+          />
+          <Route
+            path="/about"
             element={
               <>
                 <NavBar />
+                <SearchPage />
                 <HomePage />
               </>
             }
           />
+
+          <Route path="/login" element={<LoginPage />} />
+
           <Route path="/signup" element={<SignupPage />} />
         </Routes>
       </Router>

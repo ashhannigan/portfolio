@@ -1,23 +1,44 @@
-/* body {
-    background-color: rgb(180, 190, 248);
-    color: #FFFFFF
-} */
+body{
+    background: rgb(242, 239, 234);
+    background: linear-gradient(90deg, rgba(242, 239, 2341) 0%, rgba(255,255,255,1) 100%, rgba(242, 239, 234, 1) 100%);
+}
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.flake-guard:hover, .mini-projects:hover{
+    box-shadow: 15px 15px 35px rgb(161, 206, 134);
+    opacity: 1.0;
+}
+.chilanka-regular {
+    font-family: "Chilanka", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
 
-/*
+.home-button{
+    background: white;
+    border: none;
+    border-radius: 10%;
+}
 
-https://mui.com/material-ui/react-use-media-query/*/
+.home-button:hover{
+    box-shadow: 5px 5px 15px rgb(161, 206, 134);
+}
 
-/*mobile devices */
-@media (max-width: 768px){
-.styled-fab{
+#project-header{
+    font-size: 45px;
     position: relative;
+    top: 2rem;
+}
+#root > div > div.MuiBox-root.css-i9gxme > header > div > div.MuiBox-root.css-1guk29 > button:hover{
+    box-shadow: 5px 5px 10px rgb(161, 206, 134);
+}
 
+#root > div > div.MuiBox-root.css-i9gxme > header{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
 }
-.search-container{
-    position: relative;
-    left: 0;
-}
-.footer{
-    display: none;
-}
-}
+

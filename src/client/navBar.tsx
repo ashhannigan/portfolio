@@ -1,25 +1,18 @@
 import * as React from 'react';
-import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import InputBase from '@mui/material/InputBase';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
-import AccountCircle from '@mui/icons-material/AccountCircle';
 import { useNavigate } from 'react-router-dom';
 
 export default function NavBar() {
   const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
-    React.useState<null | HTMLElement>(null);
 
   const isMenuOpen = Boolean(anchorEl);
-  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
   const handleProfileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -28,17 +21,18 @@ export default function NavBar() {
   const handleMenuClose = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(null);
     if (event.currentTarget.textContent === "Sign out") {
-      navigate("/");
+      navigate("/about");
     }
   };
 
   const goToCollections = () => {
     setAnchorEl(null);
-    navigate('/home');
+    navigate('/about');
   };
-  const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-    setMobileMoreAnchorEl(event.currentTarget);
-  };
+
+  const goHome = () => {
+    navigate('/')
+  }
 
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
@@ -57,24 +51,16 @@ export default function NavBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={goToCollections}>View Collections</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Sign out</MenuItem>
+      <MenuItem onClick={goToCollections}>View Projects</MenuItem>
     </Menu>
   );
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
-        <Toolbar>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ display: { xs: 'none', sm: 'block' } }}
-          >
-            {"Quizuru"}
-          </Typography>
-        
+        <Toolbar className="chilanka-regular">
+            {"Ashley Hannigan"}
           <Box sx={{ flexGrow: 1 }} /> 
+          <button onClick={goHome} className='home-button'><label>{"Home"}</label></button>
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <IconButton
               size="large"
