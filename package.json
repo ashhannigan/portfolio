@@ -1,8 +1,8 @@
 {
-  "name": "simplefolio",
+  "name": "Ashley Hannigan Portfolio",
   "version": "1.0.1",
   "private": "true",
-  "description": "A clean, beautiful and responsive portfolio template for Developers!",
+  "description": "my personal portfolio!",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
@@ -10,15 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobiwave/simplefolio"
+    "url": "git+https://github.com/ashhannigan/portfolio"
   },
   "keywords": [],
-  "author": "Jacobo Martinez",
+  "author": "Ashley Hanngian",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cobiwave/simplefolio/issues"
-  },
-  "homepage": "https://github.com/cobiwave/simplefolio#readme",
+  "homepage": "https://github.com/ashhannigan/portfolio#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
     "parcel": "^2.8.2",
