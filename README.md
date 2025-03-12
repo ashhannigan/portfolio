@@ -130,8 +130,7 @@ I highly recommend to use [Netlify](https://netlify.com) because it is super eas
 
 ## Status
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3a029bfd-575c-41e5-8249-c864d482c2e5/deploy-status)](https://app.netlify.com/sites/the-simplefolio/deploys)
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/35613570-f2ba-4aa6-81ca-a6c1978fdee5/deploy-status)](https://app.netlify.com/sites/ashleyhanniganportfolio/deploys)
 ## License 📄
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
