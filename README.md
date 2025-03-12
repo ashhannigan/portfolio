@@ -1,7 +1,7 @@
 # Ashley Hannigan's Software Engineer Portfolio ⚡️ [![GitHub](https://img.shields.io/github/license/cobiwave/simplefolio?color=blue)](https://github.com/cobiwave/simplefolio/blob/master/LICENSE.md) 
 
 ## A minimal portfolio template for Developers!
-
+Skeleton created by Jacobo Martinez via Simplefolio
 <h2 align="center">
   <img src="https://github.com/cobiwave/gatsby-simplefolio/blob/master/examples/example.gif" alt="Simplefolio" width="600px" />
   <br>
