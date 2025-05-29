@@ -113,3 +113,22 @@ button:focus-visible {
   gap: 1rem;
   margin-top: 1.5rem;
 }
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  color: #0a192f;
+  transition: transform 0.2s ease, color 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+    color: #64ffda;
+  }
+}
